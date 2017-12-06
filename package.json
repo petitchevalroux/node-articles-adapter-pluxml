@@ -1,7 +1,7 @@
 {
-    "name": "@petitchevalroux/articles-adapter-pluxml",
+    "name": "articles-adapter-pluxml",
     "version": "1.0.0",
-    "description": "",
+    "description": "Adapter to get informations from a pluXml cms",
     "main": "src/index.js",
     "scripts": {
         "test": "make tests"
