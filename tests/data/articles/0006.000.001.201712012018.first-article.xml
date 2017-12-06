@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+	<title><![CDATA[First Article]]></title>
+	<allow_com>1</allow_com>
+	<template><![CDATA[article.php]]></template>
+	<chapo><![CDATA[]]></chapo>
+	<content><![CDATA[<p>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc justo mauris, vestibulum non scelerisque id, aliquam non urna. Vestibulum gravida facilisis nibh, vel efficitur nibh dictum et. Morbi iaculis purus lorem, ultricies lacinia erat volutpat id. Ut iaculis varius gravida. Maecenas eros sem, ornare vel tortor eu, blandit scelerisque orci. Quisque laoreet mauris vitae mi ultricies elementum. Curabitur dictum sem ut efficitur laoreet. Nam cursus felis pulvinar, luctus metus sit amet, commodo purus. Proin at molestie augue. Curabitur laoreet nec lectus vel imperdiet. Nunc finibus laoreet mauris.</p>
+<p>
+	Quisque laoreet lacus et sapien consectetur commodo. Phasellus luctus lobortis porta. Donec interdum egestas convallis. Suspendisse quis dui lacus. Praesent ornare nibh quis dui vehicula feugiat tincidunt et enim. Duis nec orci dapibus, sollicitudin eros quis, scelerisque risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla tincidunt vehicula magna, in dictum felis facilisis eget. Aliquam vestibulum odio ligula, aliquam ultrices velit maximus nec.</p>
+<p>
+	Pellentesque vulputate viverra ligula at efficitur. Fusce mollis ornare arcu ac euismod. Vivamus sed mauris facilisis ipsum porta pretium id id risus. Aenean non varius lectus. Proin ac est ut mi auctor pharetra. Donec pharetra quam id facilisis consectetur. Suspendisse rhoncus purus quis lorem tempor, ac vehicula nunc euismod. Ut posuere diam nisi, ut pharetra orci pulvinar quis. Donec non purus feugiat, elementum nunc et, tempor ligula. Donec vulputate est ac sollicitudin lacinia. Nam in velit et metus molestie efficitur ac vel ipsum. Donec dictum diam ut est pretium faucibus. Vivamus vitae sollicitudin urna, eu sagittis tortor. Nam suscipit sapien quam, at feugiat augue malesuada sed. Cras a ante sem. Nunc pretium leo non quam semper, sit amet interdum erat mollis.</p>
+<p>
+	Donec hendrerit, augue non ullamcorper porta, ex ante luctus nisi, aliquam facilisis erat est tristique metus. Nullam auctor ante in tellus feugiat vehicula. Etiam eu erat odio. Morbi finibus velit diam, sed aliquam orci aliquet et. Duis ac turpis at urna blandit lobortis. Cras facilisis, neque at facilisis eleifend, nunc augue consectetur ipsum, eu posuere nunc urna condimentum orci. Sed id dapibus dolor, quis accumsan est.</p>
+<p>
+	Praesent sodales erat eu volutpat bibendum. In vel quam iaculis, tempus lacus a, gravida metus. Integer mattis, nibh non laoreet scelerisque, justo nulla hendrerit nibh, ut luctus enim ante sed velit. Mauris molestie lectus lorem, at sagittis mi rutrum eget. In eu mauris nulla. Pellentesque velit nisi, porta et cursus sed, lacinia vitae ex. Vestibulum lacus metus, dignissim ac lacus ac, malesuada pellentesque nisi. Aliquam eget neque eu nibh tincidunt ullamcorper. Sed lobortis, purus et suscipit maximus, orci turpis posuere enim, ac porta turpis est lacinia diam. Aliquam nec sapien pharetra, iaculis nisi vel, volutpat libero</p>]]></content>
+	<tags><![CDATA[]]></tags>
+	<meta_description><![CDATA[]]></meta_description>
+	<meta_keywords><![CDATA[]]></meta_keywords>
+	<title_htmltag><![CDATA[]]></title_htmltag>
+</document>

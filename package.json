@@ -1,26 +1,33 @@
 {
-  "name": "node-project",
-  "version": "1.0.0",
-  "description": "Empty node project",
-  "scripts": {
-    "test": "make tests"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://github.com/petitchevalroux/node-project.git"
-  },
-  "author": "Patrick Poulain",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/petitchevalroux/node-project/issues"
-  },
-  "homepage": "https://github.com/petitchevalroux/node-project#readme",
-  "devDependencies": {
-    "eslint": "^4.4.1",
-    "eslint-plugin-promise": "^3.5.0",
-    "istanbul": "^0.4.5",
-    "js-beautify": "^1.6.14",
-    "mocha": "^3.5.0",
-    "sinon": "^3.2.0"
-  }
+    "name": "@petitchevalroux/articles-adapter-pluxml",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "make tests"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://github.com/petitchevalroux/node-articles-adapter-pluxml.git"
+    },
+    "author": "Patrick Poulain",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/petitchevalroux/node-articles-adapter-pluxml/issues"
+    },
+    "homepage": "https://github.com/petitchevalroux/node-articles-adapter-pluxml#readme",
+    "devDependencies": {
+        "eslint": "^4.4.1",
+        "eslint-plugin-promise": "^3.5.0",
+        "istanbul": "^0.4.5",
+        "js-beautify": "^1.6.14",
+        "mocha": "^3.5.0",
+        "sinon": "^3.2.0"
+    },
+    "dependencies": {
+        "bluebird": "^3.5.1",
+        "multi-fs": "^1.0.1",
+        "sprintf": "^0.1.5",
+        "xml2js": "^0.4.19"
+    }
 }

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+	<title><![CDATA[Draft Article]]></title>
+	<allow_com>1</allow_com>
+	<template><![CDATA[article.php]]></template>
+	<chapo><![CDATA[]]></chapo>
+	<content><![CDATA[<div id="lipsum">
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer scelerisque, magna nec pellentesque varius, leo ligula tempor nisi, nec aliquam felis orci in orci. Duis cursus velit id diam venenatis tempus. Maecenas pharetra nibh ut diam facilisis, ut bibendum ligula venenatis. Vivamus sed molestie quam, sed porta enim. Proin nec nulla ut magna consectetur facilisis vel vel sapien. Nam imperdiet aliquam ipsum, in ultricies massa pellentesque ac. Praesent laoreet tortor nibh. Donec rutrum vel erat in varius.</p>
+	<p>
+		Praesent cursus egestas congue. Nunc sapien odio, sagittis vel imperdiet ac, lobortis ac dui. In vestibulum efficitur velit et dictum. Mauris tempor tempor rutrum. Integer quis mauris nec libero varius consectetur. Morbi lacinia tempor enim id fringilla. In sit amet vulputate lorem, sit amet varius urna. Proin id purus vulputate, vestibulum nunc et, imperdiet dolor. Nam sed tristique lacus.</p>
+	<p>
+		Mauris a purus nec tortor convallis lobortis. Nam cursus nec risus vel accumsan. Nam semper pretium imperdiet. In vehicula in augue ac volutpat. Sed maximus lacus id nisl hendrerit, a tempor nisi egestas. Maecenas diam urna, scelerisque vitae congue quis, pretium nec massa. Pellentesque ut lacus a est imperdiet fringilla sed ut magna. Proin nec congue libero. Sed facilisis venenatis mollis. Sed porta mauris sit amet ante sollicitudin, vel bibendum massa convallis. Nulla vulputate libero sed suscipit pellentesque.</p>
+	<p>
+		Nunc tincidunt enim vel eros tempus, eu mattis mi laoreet. Praesent cursus odio a ligula gravida efficitur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam ut augue eu neque consectetur imperdiet vel sed nunc. Donec placerat volutpat laoreet. Cras et ultricies lectus. Morbi condimentum velit ex, eget ornare dui mollis eu. Pellentesque eu velit nec odio varius ullamcorper sed a erat. Vivamus ullamcorper ligula eu posuere tristique. Mauris tristique enim id sollicitudin faucibus. Proin mollis sed elit id lobortis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus ultrices massa a ipsum rhoncus, luctus ultricies nisl tempor. Aliquam eget egestas libero, id ornare lectus.</p>
+	<p>
+		Suspendisse eleifend maximus ante, eget dictum lectus pharetra laoreet. Nulla imperdiet urna eget porta iaculis. Aliquam vitae lobortis massa. Nunc commodo non ex eget vehicula. Sed at nunc luctus arcu faucibus egestas. Vivamus pulvinar quis metus id congue. Donec ex felis, congue in elit sed, accumsan fringilla turpis. Aenean eget laoreet sem. Aliquam ullamcorper placerat pellentesque. Ut in urna at lacus tincidunt mattis. Praesent quis velit eget neque luctus finibus eget a erat. Proin in felis et mauris pretium rutrum sed ut nulla. Donec in auctor tortor, in vehicula nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+</div>]]></content>
+	<tags><![CDATA[]]></tags>
+	<meta_description><![CDATA[]]></meta_description>
+	<meta_keywords><![CDATA[]]></meta_keywords>
+	<title_htmltag><![CDATA[]]></title_htmltag>
+</document>
