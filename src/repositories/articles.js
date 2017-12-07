@@ -105,7 +105,8 @@ class ArticlesRepository {
                             date.substr(8, 2),
                             date.substr(10, 2)
                         ), timezone)
-                        .unix()
+                        .unix(),
+                    isDraft: data[1].indexOf("draft") !== -1
                 };
             });
 

@@ -2,7 +2,8 @@
 const
     path = require("path"),
     Adapter = require(path.join(__dirname, "..")),
-    assert = require("assert");
+    assert = require("assert"),
+    Promise = require("bluebird");
 describe("articles", () => {
     const adapter = new Adapter(path.join(__dirname, "data"));
     describe("getIds", () => {
@@ -64,6 +65,29 @@ describe("articles", () => {
                         1532974680
                     );
                     return article;
+                });
+        });
+
+        it("return article draft status", () => {
+            return Promise.all([
+                adapter.articles.getById("0007"),
+                adapter.articles.getById("0006"),
+                adapter.articles.getById("0008")
+            ])
+                .then((articles) => {
+                    assert.equal(
+                        articles[0].isDraft,
+                        true
+                    );
+                    assert.equal(
+                        articles[1].isDraft,
+                        false
+                    );
+                    assert.equal(
+                        articles[2].isDraft,
+                        false
+                    );
+                    return articles;
                 });
         });
     });
