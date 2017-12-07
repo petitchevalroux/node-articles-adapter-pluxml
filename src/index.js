@@ -35,7 +35,8 @@ class PluxmlAdapter {
             this.articlesRepository = new ArticlesRepository({
                 storage: this.getStorage(),
                 xmlParser: this.getXmlParser(),
-                pluxmlConfiguration: this.getPluxmlConfiguration()
+                pluxmlConfiguration: this.getPluxmlConfiguration(),
+                rewriteRule: this.options.rewriteRule
             });
         }
         return this.articlesRepository;

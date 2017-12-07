@@ -1,11 +1,15 @@
 "use strict";
 const path = require("path"),
-    util = require("util"),
-    moment = require("moment-timezone");
+    moment = require("moment-timezone"),
+    sprintf = require("sprintf-js")
+        .sprintf;
 
 class ArticlesRepository {
     constructor(options) {
         this.options = options || {};
+        if (!this.options.rewriteRule) {
+            this.options.rewriteRule = "/index.php?article%d/%s";
+        }
     }
 
     getIds() {
@@ -97,7 +101,7 @@ class ArticlesRepository {
                     slug: data[4],
                     url: this.getUrl(data[0], data[4]),
                     publicationDate: moment
-                        .tz(util.format(
+                        .tz(sprintf(
                             "%s-%s-%s %s:%s",
                             date.substr(0, 4),
                             date.substr(4, 2),
@@ -113,7 +117,7 @@ class ArticlesRepository {
     }
 
     getUrl(id, slug) {
-        return util.format("/index.php?article%d/%s", id, slug);
+        return sprintf(this.options.rewriteRule, id, slug);
     }
 
     getPathByFile(file) {

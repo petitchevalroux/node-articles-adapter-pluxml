@@ -90,5 +90,21 @@ describe("articles", () => {
                     return articles;
                 });
         });
+        it("format url according to rewrite rule setting", () => {
+            const adapter = new Adapter({
+                storage: path.join(__dirname,
+                    "data"),
+                rewriteRule: "http://example.com/%2$s.%1$d.html"
+            });
+            return adapter
+                .articles
+                .getById("0008")
+                .then((article) => {
+                    assert.equal(article.url,
+                        "http://example.com/short-body.8.html"
+                    );
+                    return article;
+                });
+        });
     });
 });

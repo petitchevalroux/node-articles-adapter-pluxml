@@ -29,6 +29,7 @@
         "moment-timezone": "^0.5.14",
         "multi-fs": "^1.0.1",
         "sprintf": "^0.1.5",
+        "sprintf-js": "^1.1.1",
         "xml2js": "^0.4.19"
     }
 }
