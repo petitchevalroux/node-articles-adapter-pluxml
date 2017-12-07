@@ -1,6 +1,7 @@
 "use strict";
 const path = require("path"),
-    util = require("util");
+    util = require("util"),
+    moment = require("moment-timezone");
 
 class ArticlesRepository {
     constructor(options) {
@@ -74,16 +75,40 @@ class ArticlesRepository {
                     });
             })
             .then(([file, article]) => {
-                return Object.assign(article, self.getDataFromFile(file));
+                return self.getDataFromFile(file)
+                    .then((fileData) => {
+                        return [fileData, article];
+                    });
+            })
+            .then(([fileData, article]) => {
+                return Object.assign(article, fileData);
             });
     }
 
     getDataFromFile(file) {
-        const data = file.split(".");
-        return {
-            slug: data[4],
-            url: this.getUrl(data[0], data[4])
-        };
+        return this
+            .options
+            .pluxmlConfiguration
+            .getTimezone()
+            .then((timezone) => {
+                const data = file.split("."),
+                    date = data[3];
+                return {
+                    slug: data[4],
+                    url: this.getUrl(data[0], data[4]),
+                    publicationDate: moment
+                        .tz(util.format(
+                            "%s-%s-%s %s:%s",
+                            date.substr(0, 4),
+                            date.substr(4, 2),
+                            date.substr(6, 2),
+                            date.substr(8, 2),
+                            date.substr(10, 2)
+                        ), timezone)
+                        .unix()
+                };
+            });
+
     }
 
     getUrl(id, slug) {

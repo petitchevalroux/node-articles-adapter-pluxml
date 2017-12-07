@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "bluebird": "^3.5.1",
+        "moment-timezone": "^0.5.14",
         "multi-fs": "^1.0.1",
         "sprintf": "^0.1.5",
         "xml2js": "^0.4.19"

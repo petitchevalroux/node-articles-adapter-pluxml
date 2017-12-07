@@ -3,7 +3,9 @@ const path = require("path"),
     Storage = require(path.join(__dirname, "libraries", "storage")),
     XmlParser = require(path.join(__dirname, "libraries", "xml-parser")),
     ArticlesRepository = require(path.join(__dirname, "repositories",
-        "articles"));
+        "articles")),
+    PluxmlConfiguration = require(path.join(__dirname, "libraries",
+        "pluxml-configuration"));
 
 
 
@@ -32,7 +34,8 @@ class PluxmlAdapter {
         if (!this.articlesRepository) {
             this.articlesRepository = new ArticlesRepository({
                 storage: this.getStorage(),
-                xmlParser: this.getXmlParser()
+                xmlParser: this.getXmlParser(),
+                pluxmlConfiguration: this.getPluxmlConfiguration()
             });
         }
         return this.articlesRepository;
@@ -50,6 +53,16 @@ class PluxmlAdapter {
             this.xmlParser = new XmlParser();
         }
         return this.xmlParser;
+    }
+
+    getPluxmlConfiguration() {
+        if (!this.pluxmlConfiguration) {
+            this.pluxmlConfiguration = new PluxmlConfiguration({
+                storage: this.getStorage(),
+                xmlParser: this.getXmlParser()
+            });
+        }
+        return this.pluxmlConfiguration;
     }
 }
 

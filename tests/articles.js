@@ -53,5 +53,18 @@ describe("articles", () => {
                     return article;
                 });
         });
+
+        it("return article publication date", () => {
+            return adapter
+                .articles
+                .getById("0008")
+                .then((article) => {
+                    assert.equal(
+                        article.publicationDate,
+                        1532974680
+                    );
+                    return article;
+                });
+        });
     });
 });
