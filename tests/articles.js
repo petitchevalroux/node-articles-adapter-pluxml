@@ -11,8 +11,10 @@ describe("articles", () => {
                 .articles
                 .getIds()
                 .then((ids) => {
-                    assert.deepEqual(ids, ["0006",
-                        "0007"
+                    assert.deepEqual(ids, [
+                        "0006",
+                        "0007",
+                        "0008"
                     ]);
                     return ids;
                 });
@@ -38,6 +40,16 @@ describe("articles", () => {
                 .then((article) => {
                     assert.equal(article.title,
                         "First Article");
+                    return article;
+                });
+        });
+        it("return article body", () => {
+            return adapter
+                .articles
+                .getById("0008")
+                .then((article) => {
+                    assert.equal(article.body,
+                        "Chapeau\nContent");
                     return article;
                 });
         });
