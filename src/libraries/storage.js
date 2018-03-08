@@ -1,6 +1,7 @@
 "use strict";
 const MultiFs = require("multi-fs"),
-    Promise = require("bluebird");
+    Promise = require("bluebird"),
+    diff = require("arr-diff");
 class Storage {
     constructor(options) {
         this.options = options || {};
@@ -33,7 +34,9 @@ class Storage {
                         if (err) {
                             return reject(err);
                         }
-                        resolve(files);
+                        resolve(diff(files, [
+                            ".htaccess"
+                        ]));
                     });
                 });
             });

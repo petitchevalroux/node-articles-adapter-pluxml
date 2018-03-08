@@ -25,6 +25,7 @@
         "sinon": "^3.2.0"
     },
     "dependencies": {
+        "arr-diff": "^4.0.0",
         "bluebird": "^3.5.1",
         "moment-timezone": "^0.5.14",
         "multi-fs": "^1.0.1",
